@@ -1,0 +1,12 @@
+opacity:  specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent
+
+margin: specifies the space outside an element’s border. It creates distance between the element and its neighboring elements
+
+border-style: specifies the certain style of the borders
+
+border-color: specifies the color of the borders
+
+border-width: specifies the width of the four borders
+
+border-(left, right, top or bottom): specifies the specific border
+

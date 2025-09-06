@@ -363,7 +363,6 @@ Beispiel 8:
  
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <link rel="stylesheet" href="styles.css">
-  
   <script src="main.js" defer></script>
 </head>
 
@@ -406,5 +405,31 @@ HTML Layout Elements
 </body>
 ...
 
-Beispiel 9:
+Beispiel 9: Farbenstyle
 
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0);">...</h1>
+
+
+
+
+Beispiel 10: background-color shorthand
+instead of:
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+use:
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+also you can specify certain border colors:
+p {
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
