@@ -2,11 +2,483 @@ opacity:  specifies the opacity/transparency of an element. It can take a value 
 
 margin: specifies the space outside an element’s border. It creates distance between the element and its neighboring elements
 
-border-style: specifies the certain style of the borders
+margin-collapse: is when the vertical (not horizontal) margins of two adjacent elements do not add together, but instead overlap, resulting in a single margin that equals the larger of the two.
+	collapse:
+	h1 { margin-bottom: 50px; }
+	h2 { margin-top: 20px; }
+	no collapse:
+	h1 { margin-top: 50px; }
+	h2 { margin-bottom: 20px; }
+	
+padding: specifies the space inside an element’s border. It creates distance between the element’s content and its border.
 
-border-color: specifies the color of the borders
+border(-top, -right, -bottom and -left): specifies the specific or all borders
 
-border-width: specifies the width of the four borders
+box-sizing: specifies how the total width and height of an element are calculated. It determines whether padding and borders are included in the element’s dimensions or added on top.
+	content-box: (default) The width and height apply only to the content. Padding and borders are added outside, increasing the total size of the element.
+	border-box: The width and height include content, padding, and borders. The total size of the element stays fixed, and padding/border are drawn inside the defined dimensions.
 
-border-(left, right, top or bottom): specifies the specific border
+width: specifies the horizontal size of an element’s content box. It defines how wide the element should be
 
+height: specifies the vertical size of an element’s content box. It defines how tall the element should be
+
+max-width/height: specifies the maximum horizontal/vertical size an element can grow to. It limits how wide/tall the element can become, regardless of content overflow or container size
+	If you use both the width property and the max-width property on the same element and the value of the width property is larger than the max-width property, then the max-width property value will be used!
+
+
+outline: specifies a line drawn around an element, outside its border. It highlights the element without affecting its size or layout.
+
+outline-offset: specifies the space between the outline and the element’s border. It creates visual distance without shifting or resizing the element.
+
+border vs outline:
+	border:
+		- Ist Teil des Box-Modells
+		- Beeinflusst die Größe und Position des Elements
+		- Verschiebt benachbarte Elemente, da es Platz einnimmt
+		- Kann einzeln pro Seite gesetzt werden (border-top, border-left, etc.)
+		- Unterstützt border-radius für abgerundete Ecken		
+	outline:
+		- Liegt außerhalb des Box-Modells
+		- Beeinflusst nicht die Größe oder das Layout des Elements
+		- Überlappt benachbarte Elemente, statt sie zu verschieben
+		- Gilt immer für alle Seiten gleichzeitig – kein outline-top etc.
+		- Unterstützt outline-offset, um Abstand zur Box zu schaffen
+		- Wird oft für Fokuszustände verwendet (:focus bei Buttons, Inputs etc.)
+
+text-decoration-line: overline/underline/line-through;
+
+text-decoration-color: red;
+
+text-decoration-style: solid/double/dotted/dashed/wavy;
+
+text-decoration-thickness: 2px;
+
+text-transform: none/capitalize/uppercase/lowercase/;
+
+text-indent: 70px; /* Einrückung des Textes */
+
+letter-spacing: 5px; /* Spezifisiert den Abstand zwischen den characters kann auch -2px sein*/
+
+Spezifisiert den Abstand zwischen den Zeilen:
+	p.small { line-height: 0.7; }
+	p.big { line-height: 1.8; }
+
+Spezifisiert den Abstand zwischen den Wörtern:
+	p.one { word-spacing: 10px; }
+	p.two { word-spacing: -2px; }
+
+Spezifisiert wie white-spaces in einem Element behandelt werden:
+	p { white-space: normal/nowrap/pre/pre-line/pre-wrap; }
+	nowrap: Zeile geht über Rand hinaus
+	pre-line: ähnlich wie pre, aber Zeilen werden kleiner, wenn Fenster kleiner wird (wie bei default <p>), ignoriert white-spaces.
+	pre-wrap: ähnlich wie pre-line, aber ignoriert white-spaces nicht (wie bei pre)
+
+font-family: "Times New Roman", sans-serif, serif; /* Links Priorität, falls nicht möglich Alternativen */
+
+font-style: normal/italic/oblique; /* italic = kursiv; obliquie = schräg */
+
+font-weight: normal/bold/bolder/lighter/100-900;
+
+font-variant: normal/small-caps; /* small-caps macht alles uppercase, aber in etwas kleinerer Schrift */
+
+a:link { color: red; } /* unvisited link */
+
+a:visited { color: green; } /* visited link */
+
+a:hover { color: hotpink; } /* mouse over link */
+
+a:active { color: blue; } /* selected link */
+
+display: block/inline-block/none/flex/grid;
+	Genauer https://developer.mozilla.org/de/docs/Web/CSS/display
+	
+Für cursor Property:
+	https://www.w3schools.com/css/tryit.asp?filename=trycss_cursor
+	
+ul und ol
+	ul { list-style-type: circle/disc/square; }
+	ol {
+		list-style-type: upper-roman/lower-roman/lower-alpha/decimal; 
+		list-style-image: url('sqpurple.gif');
+		list-style-position: outside/inside;
+	}
+
+border-collapse: collapse/seperate; /* Borders in eine Border collapsen oder Borders in eigene Border seperaten */ 
+
+Tabelle:
+	<table>
+		<thead>
+			<tr>
+			  <th>First Name</th>
+			  <th>Last Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			  <td>Peter</td>
+			  <td>Griffin</td>
+			</tr>
+			<tr>
+			  <td>Lois</td>
+			  <td>Griffin</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	tbody tr:nth-child(2n) { background-color: purple; } /* Nur 2n-Element von tbody tr färben */
+	tr/td/th:hover { background-color: purple; }
+
+scrollbar für table:
+	div.tablecontainer { overflow-x: auto; } /* horizontales scrollbar, falls screen zu klein ist */
+	<div class="tablecontainer"> <table> ... </div>
+
+display bei Listen
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+	untereinander: li { display: block; }
+	nebeneinander: li { display: inline; }
+	
+float: specifies how an element should float within its container (left, right, none, inherit). Is often used to wrap text around images!
+	HTML <div> elements are block elements, and will start on a new line and take up the full width available. However, if we use float: left we can make the <div> elements to float next to each other
+	div1:div2:div3 statt alle drei div untereinander (block)
+	
+clear: specifies what should happen with the element that is NEXT to a floating element.
+	clear: none/left/right/both/inherit
+	
+clearfix:
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	<div class="clearfix">
+		/* div Bilder oder anderes */
+	...
+	
+Zwei Boxen als Container:
+	<head>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.box {
+			  float: left;
+			  width: 50%;
+			  padding: 50px;
+			  height: 300px;
+			}
+
+			.clearfix::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="clearfix">
+			<div class="box" style="background-color:#bbb">
+				<p>Box 1 content ...</p>
+			</div>
+			<div class="box" style="background-color:#ccc">
+				<p>Box 2 content ...</p>
+			</div>
+		</div>
+	</body>
+
+inline-block:
+	https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1
+
+Horizontal Navigation Menu:
+	<head>
+		<style>
+			.nav {
+			  background-color: lightgray; 
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			}
+
+			.nav li {
+			  display: inline-block;
+			  background-color: red;
+			  font-size: 18px;
+			  padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Horizontal Navigation Menu</h1>
+		<ul class="nav">
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#about">About Us</a></li>
+		  <li><a href="#clients">Our Clients</a></li>  
+		  <li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</body>
+
+Display Properties:	
+	inline 			Displays an element as an inline element
+	block 			Displays an element as a block element
+	contents 		Makes the container disappear, making its child elements children of the element the next level up in the DOM
+	flex 			Displays an element as a block-level flex container
+	grid 			Displays an element as a block-level grid container
+	inline-block 	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height, width, padding, and margin values
+	none 			The element is completely hidden from the document flow (does not take up any space). 
+
+Zentrieren mit Block:
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+	}
+	
+Zentrieren mit Flexbox:
+	.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 200px;
+	}
+	<div class="center">
+		<p>I am vertically and horizontally centered.</p>
+	</div>
+	
+Zentrieren mit Grid:
+	.center {
+		display: grid;
+		place-items: center;
+		height: 200px;
+		border: 3px solid green; 
+	}
+	<div class="center">
+		<p>I am vertically and horizontally centered.</p>
+	</div>
+
+Style Attribute position:
+	fixed: bleibt immer da fixiert wo es ist, folgt auch beim scrollen
+	absolute: bleibt immer da wo es ist
+	relative:
+
+top, right, bottom oder left positionieren:
+	.top_right {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 300px;
+		border: 3px solid black;
+		padding: 10px;
+	}
+
+left und right mit float:
+	.right {
+		float: right; /* oder inline-end */
+		width: 300px;
+		border: 3px solid green;
+		padding: 10px;
+	}
+	.left {
+		float: left; /* oder inline-start */
+		width: 300px;
+		border: 3px solid green;
+		padding: 10px;
+	}
+
+Combinators:
+	div p {} wählt alle <p> Elemente aus <div> 
+	div > p {} wählt alle Child-Elemente aus <div> (also keine <p> unter anderen Elementen im <div> außer <div>)
+	div + p {} wählt das <p> Element aus, welches das erste Sibling von <div> ist
+	div ~ p {} wählt alle <p> Elemente, welche Siblings von <div> sind
+	
+Pseudo Klassen:
+	für a:
+		
+		a:link { } /* unvisited link */
+		a:visited { } /* visited link */
+		a:hover { } /* mouse over link */
+		a:active { } /* selected link */
+
+	für input:
+		input:focus {} /* style an input field when it gets focus */
+		
+	für erstes Element in einem anderen Element:
+		p:first-child { }
+	oder:
+		p em:first-child { } 
+	
+	für erstes Element, was ein Child-Element ist:
+		p:first-child em { }
+		<p>I am NOT <em>strong</em></p>
+		<p>I am NOT <em>strong</em></p>
+
+		<div>
+		  <p>I am <em>strong</em></p>
+		  <p>I am NOT <em>strong</em></p>
+		</div>
+		
+	für :lang:
+		q:lang(klammer) {
+			quotes: "(" ")";
+		}
+		<p>Some text <q lang="klammer">Klammer</q> Some text.</p>
+
+
+Pseudo Elemente:
+	für erste Zeile/Buchstabe (nur Block Elemente):	
+		p::first-line { }
+		p::first-letter { }
+
+	für vor oder danach einfügen:
+		h3::before { content: url(smiley.gif); }	
+		h3::after { content: url(smiley.gif); }
+
+	für das stylen von List-Items:
+		::marker { color: red; }
+		
+	für das stylen vom Text welches man selektiert:
+		::marker { color: red; }
+		
+div:hover p { display: block; } /* beim hovern über <div> kann man auch andere Elemente stylen lassen */
+p {
+  display: none;
+  background-color: yellow;
+}
+
+Attribute-Selektor:
+	a[name="link"] { background-color: yellow; }
+	<a href="link" name="link">link</a>
+	
+	Selector 			Description
+	[attribute] 		Select elements with a specific attribute
+	[attribute=value] 	Select elements with a specific attribute with an exact value
+	[attribute~=value] 	Select elements with an attribute value containing a specific word
+	[attribute|=value] 	Select elements with the specific attribute, whose value can be exactly the specific value, or start with the specific value followed by a hyphen (-)
+	[attribute^=value] 	Select elements with the specific attribute, whose value starts with a specific value
+	[attribute$=value] 	Select elements whose attribute value ends with a specific value
+	[attribute*=value] 	Select elements whose attribute value contains a specific value
+
+ID-Selektor (Beispiel <p id="demo">):
+	#demo { }
+	
+Counters:
+	Counter Beispiel:
+		body { counter-reset: kapitel; }
+		h2::before {
+			counter-increment: kapitel;
+			content: "Kapitel " counter(kapitel) ": ";
+		}
+	
+	anderes Beispiel:
+		body { counter-reset: kapitel; }
+		h1 { counter-reset: subsection; }
+		h1::before {
+			counter-increment: kapitel;
+			content: "Kapitel " counter(kapitel) ". ";
+		}
+		h2::before {
+			counter-increment: unterkapitel;
+			content: counter(kapitel) "." counter(unterkapitel) " ";
+		}
+		
+		<h1>HTML/CSS Tutorials</h1>
+		<h2>HTML</h2>
+		<h2>CSS</h2>
+		<h1>Scripting Tutorials</h1>
+		<h2>JavaScript</h2>
+		<h2>jQuery</h2>
+		<h1>Programming Tutorials</h1>
+		<h2>Python</h2>
+		<h2>C++</h2>
+
+	anderes Beispiel:
+		ol {
+			counter-reset: kapitel;
+			list-style-type: none;
+		}
+		li::before {
+			counter-increment: kapitel;
+			content: counters(kapitel,".") " ";
+		}
+		
+		<p>List 1:</p>
+			<ol>
+				<li>item</li>
+				<li>item
+					<ol>
+						<li>item</li>
+						<li>item</li>
+						<li>item
+							<ol>
+								<li>item</li>
+								<li>item</li>
+								<li>item</li>
+							</ol>
+						</li>
+						<li>item</li>
+					</ol>
+				</li>
+				<li>item</li>
+				<li>item</li>
+			</ol>
+
+		<p>List 2:</p>
+			<ol>
+				<li>item</li>
+				<li>item
+					<ol>
+						<li>item</li>
+						<li>item</li>
+						<li>item</li>
+						<li>item</li>
+					</ol>
+				</li>
+				<li>item</li>
+				<li>item</li>
+			</ol>
+
+Style Regeln:
+	Selector-Typ				Priorität		Beispiel
+	Inline Styles				Höchste			style="..."
+	ID Selector					Hoch			#header
+	Class / Pseudo-Class		Mittel			.menu, :hover
+	Attribute Selector			Mittel			[type="text"]
+	Element / Pseudo-Element	Niedrig			div, ::before
+	Universal Selector			Kein Einfluss	*
+	Inherited Styles			Kein Einfluss	von Eltern übernommen
+
+Mathe-Funktionen
+	max(50%, 300px);
+	min(50%, 300px);
+	calc(100% - 100px);
+
+Input Typen HTML:
+Input Typ		Beschreibung
+text			Einzeiliges Textfeld für allgemeine Eingaben
+password		Versteckt eingegebenen Text (z. B. für Passwörter)
+email			Validiert E-Mail-Adressen automatisch
+number			Nur numerische Eingaben erlaubt (inkl. Pfeile zum Hoch-/Runterzählen)
+tel				Für Telefonnummern – keine automatische Validierung
+url				Validiert URLs
+search			Speziell für Suchfelder, oft mit „X“-Button zum Löschen
+date			Datumsauswahl mit Kalender-Popup
+time			Uhrzeitauswahl
+datetime-local	Datum und Uhrzeit (ohne Zeitzone)
+month			Auswahl eines Monats und Jahres
+week			Auswahl einer Kalenderwoche
+checkbox		Kontrollkästchen für Mehrfachauswahl
+radio			Optionsfeld für Einzelauswahl innerhalb einer Gruppe
+range			Schieberegler für Werte innerhalb eines Bereichs
+file			Ermöglicht das Hochladen von Dateien
+hidden			Unsichtbares Feld – wird im Hintergrund übermittelt
+submit			Sendet das Formular
+reset			Setzt alle Formularfelder auf ihren Ausgangswert zurück
+button			Allgemeiner Button ohne Standardverhalten
+color			Farbauswahl über Farbwähler
+image			Bild als Button – sendet Formular bei Klick mit Mauskoordinaten
