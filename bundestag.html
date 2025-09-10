@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script src="./bundestag.js" type="text/javascript"></script>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Azim Celebi">
+    <meta name="description" content="Kurze Beschreibung des Inhalts für Suchmaschinen">
+    <meta name="keywords" content="Keywords für Suchmaschinen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Klausur 2025</title>
+
+    <link rel="stylesheet" href="bundestag.css">
+</head>
+
+<body onload="bundestag.load()">
+    <h1>Debatten im Deutschen Bundestag</h1>
+
+    <main">
+        <h2 id="title"></h2>
+        <div id="content">
+            <div id="media">
+                <video controls muted hidden id="video"></video>
+                <nav>
+                    <div id="description"></div>
+                    <button id="before" onclick="before()"> &lt; Vorheriger Beitrag </button>
+                    <button id="next" onclick="next()"> &gt; Nächster Beitrag </button>
+                </nav>
+            </div>
+            <ul id="toc"></ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
