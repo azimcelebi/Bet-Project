@@ -1,0 +1,41 @@
+Vorlesungsfolien 2:
+- Merkmale und Label (Zielgröße)
+- Arten von Label
+- Regression Basics
+- Klassifikation Basics
+- Clustering Basics
+- Arten von ML Verfahren (Supervised-, Unsupervised-, Reinforcement- und Self-Supervised Learning)
+- Offline- und Offline Learning
+- Instanzbasiertes- und Modellbasiertes Lernen
+- Mögliche Probleme bei ML Algorithmen
+- Underfitting und Overfitting
+
+Vorlesungsfolien 3:
+-
+
+Vorlesungsfolien 4:
+-
+
+Vorlesungsfolien 5:
+-
+
+Vorlesungsfolien 6:
+-
+
+Vorlesungsfolien 7:
+-
+
+Vorlesungsfolien 8:
+-
+
+Vorlesungsfolien 9:
+-
+
+Vorlesungsfolien 10:
+-
+
+Vorlesungsfolien 11:
+-
+
+Vorlesungsfolien 12:
+-
