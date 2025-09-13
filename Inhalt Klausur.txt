@@ -8,6 +8,7 @@ Vorlesungsfolien 2:
 - Offline- und Offline Learning
 - Instanzbasiertes- und Modellbasiertes Lernen
 - Mögliche Probleme bei ML Algorithmen
+- Nicht repräsentative Trainingsdaten - Stichprobenverzerrung
 - Underfitting und Overfitting
 
 Vorlesungsfolien 3:
@@ -16,10 +17,25 @@ Vorlesungsfolien 3:
 - Tabellarische Daten (Nominal-, Ordinal- Interval- und Ratioskala)
 - Skalenniveaus im Machine Learning
 - Wahrscheinlichkeitsverteilungen
-- Binomial, Poisson, Normal, Exponential 
+- Binomial, Poisson, Normal, Exponential
+- Beispiele für Wahrscheinlichkeitsverteilungen
+- Statistische Kennzahlen (Lagermaße, Streuungsmaße und Visualisierungen)
+- Erwartungswert (arithmetisches Mittel)
+- Standardabweichung (Streuung der Werte)
+- Korrelation Kovarianz
 
 Vorlesungsfolien 4:
--
+- Pandas
+- DataFrame anlegen und erweitern
+- Probleme in Datensätzen
+- Umgang mit fehlenden Daten
+- Grundlegende Matrix-Operationen (Matrixmultiplikation, Matrix-Vektor Mulitplikation, Matrix Transpnonieren)
+- Garbage In Garbage Out - Warum gute Features entscheidend sind
+- Datenvorverarbeitung und Feature Engineering
+- Skalieren von Merkmalen
+- Normalisierung
+- Feature Engineering und Selection
+- Datensätze Analysieren - Kovarianz und Korrelationskoeffizient
 
 Vorlesungsfolien 5:
 -
@@ -45,3 +61,4 @@ Vorlesungsfolien 11:
 Vorlesungsfolien 12:
 
 -
+
