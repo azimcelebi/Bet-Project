@@ -11,7 +11,12 @@ Vorlesungsfolien 2:
 - Underfitting und Overfitting
 
 Vorlesungsfolien 3:
--
+- Warum Statistik für Machine Learning?
+- Datensätze
+- Tabellarische Daten (Nominal-, Ordinal- Interval- und Ratioskala)
+- Skalenniveaus im Machine Learning
+- Wahrscheinlichkeitsverteilungen
+- Binomial, Poisson, Normal, Exponential 
 
 Vorlesungsfolien 4:
 -
@@ -38,4 +43,5 @@ Vorlesungsfolien 11:
 -
 
 Vorlesungsfolien 12:
+
 -
