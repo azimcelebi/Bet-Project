@@ -68,23 +68,48 @@ Vorlesungsfolien 7:
 - Maximum Likelihood Prinzip
 - Kostenfunktion für die Logistische Regression
 - Klassifikation und Fehler
-- Konfusionsmatrix
-- Accuracy
 
 Vorlesungsfolien 8:
--
+- Accuracy
+- Recall
+- Precision
+- F1-Score
+- Specificity
+- Precision vs Recall
+- Classification Accuracy
+- Konfusionsmatrix
+- Accuracy
+- ROC Kurve 
+- Elastic Net
+- Early Stopping
+- Kreuzvalidierung
 
 Vorlesungsfolien 9:
--
+- Naive Bayes & KNN
+- K-Nearest Neighbors
 
 Vorlesungsfolien 10:
--
+- Entscheidungsbäume
+- Gini Impurity (Gini Unreinheit)
+- Information Gain
+- CART
+- Ensemble Methoden - Bagging und Boosting
 
 Vorlesungsfolien 11:
--
+- Hard-Margin Classifier
+- Soft-Margin Classifier
+- Support Vector Classifier
+- Support Vector Machines
 
 Vorlesungsfolien 12:
-
--
+- Künstliches Neuron
+- Einfache Lineare Neuronale Netze
+- Perzeptron
+- Multi-Layer Perzeptron
+- 
+- 
+- 
+- 
+- 
 
 
