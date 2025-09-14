@@ -38,13 +38,38 @@ Vorlesungsfolien 4:
 - Datensätze Analysieren - Kovarianz und Korrelationskoeffizient
 
 Vorlesungsfolien 5:
--
+- Linerare Regression (Einfache und Lineare Regression)
+- Bewertung einer Modellfunktion (Summe der absoluten Fehler, Summe der Fehlerquadrate)
+- Linerare Regression Modellfunktion und Mean Absolute Error, Mean Squared Error, Root Mean Squared Error
+- Linearität
+- Homoskedastizität
+- Unabhängigkeit der Fehler
+- Normalverteilung der Fehler
+- Minimierung der Kostenfunktion: Normalgleichung
+- Berechnung der Normalgleichung
+- Direkte Lösungen vs iterative Optimierung
+- Polynomielle Regression
+- Regularisierung
+
 
 Vorlesungsfolien 6:
--
+- Gradientenverfahren
+- Lernrate bestimmen
+- Lernkurven
+- Stochastisches Gradientenverfahren
+- Mini-Batch Gradientenverfahren 
 
 Vorlesungsfolien 7:
--
+- Accuracy als Kostenfunktion
+- Logistische Regression
+- Binäre Logistische Regression
+- Multinomiale logistische Regression
+- Klassifikationsprobleme
+- Maximum Likelihood Prinzip
+- Kostenfunktion für die Logistische Regression
+- Klassifikation und Fehler
+- Konfusionsmatrix
+- Accuracy
 
 Vorlesungsfolien 8:
 -
@@ -61,4 +86,5 @@ Vorlesungsfolien 11:
 Vorlesungsfolien 12:
 
 -
+
 
