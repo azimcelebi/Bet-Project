@@ -1,6 +1,20 @@
+Spickblatt:
+- V2 Folie 19
+- V3 Folie 7 (Nominal-, Ordinal-, Interval- und Raioskala), Folie 20-23
+- V4 Folie 12, 21, 27
+- V5 Folie 3, 4, 5, 10, 26
+- V6 Folie 3, 4, 9, 15
+- V7 Folie 4, 16, 18
+- V8 Folie 5, 6, 7, 8, 11, 14, 15
+
+- Python Beispiel
+
+Info:
+- Ein Hyperparameter ist eine Einstellung, die du vor dem Training eines Machine-Learning-Modells festlegst und die beeinflusst, wie das Modell lernt.
+
+
 Vorlesungsfolien 2:
-- Merkmale und Label (Zielgröße)
-- Arten von Label
+- Merkmale und Label (Zielgröße), Arten von Label
 - Regression Basics
 - Klassifikation Basics
 - Clustering Basics
@@ -107,3 +121,4 @@ Vorlesungsfolien 12:
 - Perzeptron Modell- und Kostenfunktion
 - Perzeptron Lernregel
 - Neuronales Netzwerk - Notationen und Berechnungen
+
