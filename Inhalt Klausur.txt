@@ -5,8 +5,11 @@ Spickblatt:
 - V5 Folie 3, 4, 5, 10, 26
 - V6 Folie 3, 4, 9, 15
 - V7 Folie 4, 16, 18
-- V8 Folie 5, 6, 7, 8, 11, 14, 15
-
+- V8 Folie 5, 6, 7, 8, 11, 14, 15, 18, 21, 22
+- V9 Folie 4, 5, 9, 14, 23
+- V10 Folie 10-12, 13-15, 16, 22/26
+- V11 Folie 19
+- V12 Folie 19, 20, 21-22
 - Python Beispiel
 
 Info:
@@ -121,4 +124,5 @@ Vorlesungsfolien 12:
 - Perzeptron Modell- und Kostenfunktion
 - Perzeptron Lernregel
 - Neuronales Netzwerk - Notationen und Berechnungen
+
 
