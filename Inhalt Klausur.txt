@@ -104,12 +104,6 @@ Vorlesungsfolien 11:
 Vorlesungsfolien 12:
 - Künstliches Neuron
 - Einfache Lineare Neuronale Netze
-- Perzeptron
-- Multi-Layer Perzeptron
-- 
-- 
-- 
-- 
-- 
-
-
+- Perzeptron Modell- und Kostenfunktion
+- Perzeptron Lernregel
+- Neuronales Netzwerk - Notationen und Berechnungen
