@@ -18,6 +18,7 @@ Info:
 Spickblatt Maybe Klein:
 - V2 Folie 21, 22, 28
 - V4 Folie 12, 22, 23
+- V5 Folie 10
 
 Vorlesungsfolien 2:
 - Merkmale und Label (Zielgröße), Arten von Label
@@ -127,6 +128,7 @@ Vorlesungsfolien 12:
 - Perzeptron Modell- und Kostenfunktion
 - Perzeptron Lernregel
 - Neuronales Netzwerk - Notationen und Berechnungen
+
 
 
 
